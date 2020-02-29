@@ -11,7 +11,7 @@ Hello.propTypes = {
   who: PropTypes.string.isRequired
 };
 
-window.hello = function() {
+window.counter = function() {
   return {
     count: 0,
     inc() {
@@ -20,7 +20,7 @@ window.hello = function() {
   };
 };
 
-const alpineString = `<div x-data="hello()">
+const alpineString = `<div x-data="counter()">
   <button @click="inc()">Increment</button>
   <p x-text="count"></p>
 </div>`;

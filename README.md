@@ -15,7 +15,7 @@ Which means a minimal integration looks as follows, **note**: you only need to `
 import React from 'react';
 import 'alpinejs';
 
-window.hello = function() {
+window.counter = function() {
   return {
     count: 0,
     inc() {
@@ -24,7 +24,7 @@ window.hello = function() {
   };
 };
 
-const alpineString = `<div x-data="hello()">
+const alpineString = `<div x-data="counter()">
   <button @click="inc()">Increment</button>
   <p x-text="count"></p>
 </div>`;
