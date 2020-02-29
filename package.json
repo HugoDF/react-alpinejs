@@ -1,0 +1,43 @@
+{
+  "name": "react-alpinejs",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html",
+    "lint": "xo .",
+    "format": "xo . --fix"
+  },
+  "author": "Hugo Di Francesco",
+  "dependencies": {
+    "alpinejs": "^2.0.2",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "main": "main.js",
+  "keywords": [
+    "react",
+    "alpinejs",
+    "react-boilerplate",
+    "parcel-bundler"
+  ],
+  "license": "MIT",
+  "description": "Simple React-AlpineJS integration example",
+  "devDependencies": {
+    "eslint-config-xo-react": "^0.20.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "prop-types": "^15.7.2",
+    "xo": "latest"
+  },
+  "xo": {
+    "extends": "xo-react",
+    "prettier": true,
+    "space": true,
+    "globals": [
+      "document",
+      "window"
+    ]
+  }
+}
